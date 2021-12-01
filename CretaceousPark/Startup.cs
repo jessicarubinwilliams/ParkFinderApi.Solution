@@ -34,6 +34,8 @@ namespace CretaceousPark
               app.UseDeveloperExceptionPage();
             }
 
+            // The method below causes our server to reroute all traffic to the HTTPS port on our server. This increases application security but it can cause browser to prevent access to the site and will slow one down while developing the project.
+
             // app.UseHttpsRedirection();
 
             app.UseRouting();
