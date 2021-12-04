@@ -24,6 +24,7 @@
 * _Microsoft.EntityFrameworkCore.Design 5.0.0_
 * _Microsoft.NET.Sdk.Web_
 * _Pomelo.EntityFrameworkCore.MySql 5.0.0-alpha.2_
+* _Swashbuckle.AspNetCore 5.6.3_
 
 ## Description <a id="description"></a>
 
