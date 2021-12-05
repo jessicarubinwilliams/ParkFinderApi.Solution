@@ -8,7 +8,7 @@
 
 1. [Technologies Used](#technologies)
 2. [Description](#description)
-3. [Setup/Installation Requirements](#setup)
+3. [Setup/Installation Requirements and Instructions](#setup)
 4. [Known Bugs](#bugs)
 5. [License](#license)
 6. [Contact Information](#contact)
@@ -30,7 +30,7 @@
 
 This C#/.NET API allows other developers to interact with data for a fictitious wildlife park consisting of creatures from the cretaceous era. Data is stored in a SQL database.
 
-## Setup/Installation Requirements <a id="setup"></a>
+## Setup/Installation Requirements and Instructions <a id="setup"></a>
 
 ### Install C#, .NET, MySQL Community Server, MySQL Workbench and dotnet-ef
 * Open the terminal on your local flavor
@@ -59,6 +59,13 @@ This C#/.NET API allows other developers to interact with data for a fictitious 
 
 ### Run the project
 * Run the program in the console with the command `$ dotnet run`
+* Open the project by navigating your browser to http://localhost:5000/api/Animals or http://localhost:5001/api/Animals
+
+
+### Explore the API Endpoints and Schema with Swagger
+<img src="./SwaggerDocumentation.png" alt="Screenshot of the the endpoints and schema of the API as documented by Swagger." width="50%">
+
+* Explore and test the API endpoints and schema with Swagger by navigating to http://localhost:5000/swagger/index.html
 
 ## Known Bugs <a id="bugs"></a>
 * No known bugs
