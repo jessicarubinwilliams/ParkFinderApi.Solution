@@ -48,7 +48,7 @@ namespace CretaceousPark
             {
               app.UseDeveloperExceptionPage();
               app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ScaffoldedAPI v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "CretaceousParkAPI v1"));
             }
 
             // The method below causes our server to reroute all traffic to the HTTPS port on our server. This increases application security but it can cause browser to prevent access to the site and will slow one down while developing the project.
