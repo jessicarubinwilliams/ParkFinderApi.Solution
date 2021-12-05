@@ -63,7 +63,7 @@ This C#/.NET API allows other developers to interact with data for a fictitious 
 
 
 ### Explore the API Endpoints and Schema with Swagger
-<img src="./SwaggerDocumentation.png" alt="Screenshot of the the endpoints and schema of the API as documented by Swagger." width="50%">
+<img src="./SwaggerDocumentation.png" alt="Screenshot of the the endpoints and schema of the API as documented by Swagger." width="100%">
 
 * Explore and test the API endpoints and schema with Swagger by navigating to http://localhost:5000/swagger/index.html
 
