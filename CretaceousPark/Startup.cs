@@ -24,10 +24,20 @@ namespace CretaceousPark
 
           services.AddDbContext<CretaceousParkContext>(opt =>
             opt.UseMySql(Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
-          services.AddControllers();
+          services.AddControllers(); 
           services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "ScaffoldedAPI", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo
+                { 
+                  Title = "Cretaceous Park API",
+                  Version = "v1",
+                  Description = "An ASP.NET Core Web API for managing animals of a fictitious Cretaceous Park",
+                  Contact = new OpenApiContact
+                  { 
+                    Name = "Jessica R. Williams",
+                    Email = "jessicarubinwilliams@gmail.com"
+                    } 
+                  });
             });
         }
 
