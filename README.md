@@ -1,6 +1,6 @@
-# Cretaceous Park API
+# Park Finder API
 
-#### _A queryable C#/.NET API using RESTful principles that shares data about a fictitious wildlife park consisting of creatures from the cretaceous era._
+#### _A queryable C#/.NET API using RESTful principles that shares data about State and National Parks._
 
 #### By **Jessica R. Williams**
 
@@ -28,7 +28,7 @@
 
 ## Description <a id="description"></a>
 
-This C#/.NET API allows other developers to interact with data for a fictitious wildlife park consisting of creatures from the cretaceous era. Data is stored in a SQL database.
+This C#/.NET API allows other developers to interact with data about State and National Parks. Data is stored in a SQL database.
 
 ## Setup/Installation Requirements and Instructions <a id="setup"></a>
 
@@ -40,17 +40,17 @@ This C#/.NET API allows other developers to interact with data for a fictitious 
 
 ### Clone the project
 * Navigate to the directory inside of which you wish to house this project
-* Clone this project with the command `$ git clone https://github.com/jessicarubinwilliams/CretaceousPark.Solution`
+* Clone this project with the command `$ git clone https://github.com/jessicarubinwilliams/ParkFinder.Solution`
 
 ### Scaffold and connect the database
 * Launch the MySQL server with the command `mysql -uroot -p[YOUR-PASSWORD-HERE]`
-* In your terminal, navigate to the production project directory with the command `$ cd CretaceousPark.Solution/CretaceousPark`
+* In your terminal, navigate to the production project directory with the command `$ cd ParkFinder.Solution/ParkFinder`
 * In your terminal, create a file within the project in which to store your connection string for connecting the project to the database with the command `touch appsettings.json`
 * In your text editor add the following code to the newly created appsettings.json file. *Note that uid and pwd may vary depending on your local MySql configurations.
 ```
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Server=localhost;Port=3306;database=cretaceous_park;uid=root;pwd=[YOUR-PASSWORD-HERE];"
+    "DefaultConnection": "Server=localhost;Port=3306;database=park_finder;uid=root;pwd=[YOUR-PASSWORD-HERE];"
   }
 }
 ```
@@ -59,12 +59,12 @@ This C#/.NET API allows other developers to interact with data for a fictitious 
 
 ### Run the project
 * Run the program in the console with the command `$ dotnet run`
-* Open the project by navigating your browser to http://localhost:5000/api/Animals or http://localhost:5001/api/Animals
+* Open the project by navigating your browser to http://localhost:5000/api/Parks or http://localhost:5001/api/Parks
 
 
 ### Explore the API Endpoints and Schema with Swagger
-* Once you've run the program in the console (see above), explore and test the API endpoints and schema with Swagger by navigating to http://localhost:5000/swagger/index.html
-<img src="./SwaggerDocumentation.png" alt="Screenshot of the the endpoints and schema of the API as documented by Swagger." width="100%">
+* Once you've run the program in the console (see above), explore and test the API endpoints and schema with Swagger by navigating to http://localhost:5000/swagger/index.html or http://localhost:5001/swagger/index.html
+<img src="./ParkFinderApiSwaggerDocumentation.png" alt="Screenshot of the the endpoints and schema of the API as documented by Swagger." width="100%">
 
 
 ## Known Bugs <a id="bugs"></a>
